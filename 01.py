@@ -15,4 +15,5 @@ def main():
     print(sum(int(x) for x in s.split()))
 
 
-main()
+if __name__ == '__main__':
+    main()
