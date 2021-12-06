@@ -14,17 +14,13 @@ def main():
         if stack[0, :].any(): stack = np.concatenate((np.full((1, 21), False), stack))
 
         # find row to insert gift
-        idx = 0
         for i, row in enumerate(stack[:-1, :]):
             if row[x:x+length].any(): break
             idx = i
 
         # support under middle ?
         mid = length // 2
-        if length % 2 == 0:
-            mid_support = stack[idx+1, x+mid-1:x+mid+1].all()
-        else:
-            mid_support = stack[idx+1, x+mid]
+        mid_support = stack[idx+1, x+mid] if length % 2 else False
 
         # support on left and right side?
         left = stack[idx+1, x:x+mid].any()
