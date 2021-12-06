@@ -3,12 +3,12 @@
 
 Luke | Hva | Løst
 :------------ | :------------- | :-------------
-1 | Strengtall | :heavy_check_mark:
-2 | Nissens rute | :heavy_check_mark:
-3 | Snille og slemme barn | :heavy_check_mark:
-4 | Sneglulf i Atlanteren | :heavy_check_mark:
-5 | Slektstre | :heavy_check_mark:
-6 | Pakkestabel | :heavy_check_mark:
+1 | [Strengtall](01.py) | :heavy_check_mark:
+2 | [Nissens rute](02.py) | :heavy_check_mark:
+3 | [Snille og slemme barn](03.py) | :heavy_check_mark:
+4 | [Sneglulf i Atlanteren](04.py) | :heavy_check_mark:
+5 | [Slektstre](05.py) | :heavy_check_mark:
+6 | [Pakkestabel](06.py) | :heavy_check_mark:
 7 |  | :x:
 8 |  | :x:
 9 |  | :x:
