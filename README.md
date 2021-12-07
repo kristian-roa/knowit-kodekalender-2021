@@ -9,7 +9,7 @@ Luke | Hva | Løst | Luke | Hva | Løst
  4 | [Sneglulf i Atlanteren](04.py) | :heavy_check_mark: | 16 |  | :x:
  5 | [Slektstre](05.py) | :heavy_check_mark: | 17 |  | :x:
  6 | [Pakkestabel](06.py) | :heavy_check_mark: | 18 |  | :x:
- 7 |  | :x: | 19 |  | :x:
+ 7 | [Ant on a rope](07.py) | :heavy_check_mark: | 19 |  | :x:
  8 |  | :x: | 20 |  | :x:
  9 |  | :x: | 21 |  | :x:
 10 |  | :x: | 22 |  | :x:
