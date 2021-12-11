@@ -13,5 +13,5 @@ Luke | Hva | Løst | Luke | Hva | Løst
  8 | [Pakkeslyngen 3000](08.py) | :heavy_check_mark: | 20 |  | :x:
  9 | [Chinese remainder theorem](09.py) | :heavy_check_mark: | 21 |  | :x:
 10 | [Skjermlåsen til Nissen](10.py) | :heavy_check_mark: | 22 |  | :x:
-11 |  | :x: | 23 |  | :x:
+11 | [Kryptolåst gaveliste](11.py) | :heavy_check_mark: | 23 |  | :x:
 12 |  | :x: | 24 |  | :x:
