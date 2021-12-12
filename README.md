@@ -14,4 +14,4 @@ Luke | Hva | Løst | Luke | Hva | Løst
  9 | [Chinese remainder theorem](09.py) | :heavy_check_mark: | 21 |  | :x:
 10 | [Skjermlåsen til Nissen](10.py) | :heavy_check_mark: | 22 |  | :x:
 11 | [Kryptolåst gaveliste](11.py) | :heavy_check_mark: | 23 |  | :x:
-12 |  | :x: | 24 |  | :x:
+12 | [Kategoriseringskaos](12.py) | :heavy_check_mark: | 24 |  | :x:
