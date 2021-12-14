@@ -4,7 +4,7 @@
 Luke | Hva | Løst | Luke | Hva | Løst
 :------------ | :------------- | :------------- | :------------ | :------------- | :-------------
  1 | [Strengtall](01.py) | :heavy_check_mark: | 13 | [Det høge tårn i pipa](13.py) | :heavy_check_mark:
- 2 | [Nissens rute](02.py) | :heavy_check_mark: | 14 |  | :x:
+ 2 | [Nissens rute](02.py) | :heavy_check_mark: | 14 | [Nissar og troll i ord](14.py) | :heavy_check_mark:
  3 | [Snille og slemme barn](03.py) | :heavy_check_mark: | 15 |  | :x:
  4 | [Sneglulf i Atlanteren](04.py) | :heavy_check_mark: | 16 |  | :x:
  5 | [Slektstre](05.py) | :heavy_check_mark: | 17 |  | :x:
