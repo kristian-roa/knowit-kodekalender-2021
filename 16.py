@@ -27,22 +27,7 @@ def main():
     print(f'{np.argmin((price_1, price_2))+1},{abs(price_1 - price_2)}')
 
 
-def read(year, days=365):
-    def get(price, hour): return year[(max_price - price) * (24 * days + 1) + hour]
-
-    max_price = year.count('\n') - 1
-    for price in range(max_price):
-        if get(price, 0) != ' ':
-            break
-
-    prices = [price]
-    for hour in range(1, days*24):
-        for price in range(min(0, price), max(price, max_price) + 1):
-            if get(price, hour) != ' ':
-                prices.append(price)
-                break
-
-    return prices
+def read(year, hours=365*24): return [year[h::hours+1].lstrip().count(" ") for h in range(hours)]
 
 
 if __name__ == '__main__':
