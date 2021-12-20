@@ -13,7 +13,7 @@ def main():
     def right(rot): return (rot + 1) % 4
     def double(rot): return (rot + 2) % 4
 
-    move = {0: np.array([-1, 0]), 1: np.array([0, 1]), 2: np.array([1, 0]), 3: np.array([0, -1])}
+    move = [np.array([-1, 0]), np.array([0, 1]), np.array([1, 0]), np.array([0, -1])]
 
     pos = np.array([0, 0]); rot = 2; steps = 0
     while tuple(pos + 1) != maze.shape[:-1]:
