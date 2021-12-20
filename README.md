@@ -10,7 +10,7 @@ Luke | Hva | Løst | Luke | Hva | Løst
  5 | [Slektstre](05.py) | :heavy_check_mark: | 17 | [Alvesortering](17.py) | :heavy_check_mark:
  6 | [Pakkestabel](06.py) | :heavy_check_mark: | 18 | [Niklatzsekvens](18.py) | :heavy_check_mark:
  7 | [Ant on a rope](07.py) | :heavy_check_mark: | 19 | [Pakke pakke pakke](19.py) | :heavy_check_mark:
- 8 | [Pakkeslyngen 3000](08.py) | :heavy_check_mark: | 20 |  | :x:
+ 8 | [Pakkeslyngen 3000](08.py) | :heavy_check_mark: | 20 | [Venstrehåndslabyrint](20.py) | :heavy_check_mark:
  9 | [Chinese remainder theorem](09.py) | :heavy_check_mark: | 21 |  | :x:
 10 | [Skjermlåsen til Nissen](10.py) | :heavy_check_mark: | 22 |  | :x:
 11 | [Kryptolåst gaveliste](11.py) | :heavy_check_mark: | 23 |  | :x:
