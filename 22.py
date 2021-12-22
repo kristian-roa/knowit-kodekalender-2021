@@ -11,11 +11,10 @@ def main():
 
     # Generate all possible states 1-6 steps from solution
     steps_from_solution = {}
-    stack = deque([(solved, 0)])
+    Q, steps = deque([(solved, 0)]), 0
 
-    while stack:
-        state, steps = stack.popleft()
-        if steps > 6: break
+    while steps <= 6:
+        state, steps = Q.popleft()
         if state in steps_from_solution: continue
         steps_from_solution[state] = steps
 
@@ -23,26 +22,30 @@ def main():
             for i in range(4):
                 b = move(state, i)
                 if b not in steps_from_solution:
-                    stack.append((b, steps + 1))
+                    Q.append((b, steps + 1))
 
     # Solve the boards
     total_steps = 0
     for num, board in enumerate(boards):
         print(f'Board {num}: ', end='')
 
-        stack = deque([(board, 0)])
+        Q = deque([(board, 0)])
         visited = set()
 
-        while stack:
-            state, steps = stack.popleft()
-            if state in steps_from_solution: steps += steps_from_solution[state]; print(steps); break
+        while Q:
+            state, steps = Q.popleft()
+            if state in steps_from_solution:
+                steps += steps_from_solution[state]
+                print(steps)
+                break
+
             visited.add(state)
 
             for move in moves:
                 for i in range(4):
                     b = move(state, i)
                     if b not in visited:
-                        stack.append((b, steps+1))
+                        Q.append((b, steps+1))
 
         total_steps += steps
 
