@@ -3,14 +3,14 @@ from collections import defaultdict
 
 
 def main():
-    url_work = 'https://julekalender-backend.knowit.no/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0231bdab4db307bd7c2cc773887ac45934075ea5/feilregistreringer.txt?disposition=inline'
-    url_steps = 'https://julekalender-backend.knowit.no/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c54e83e4bf7d625841928ae1b26b9adb4cfd0fa/skritt.txt?disposition=inline'
+    url_wrong = 'https://julekalender-backend.knowit.no/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVFDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--0231bdab4db307bd7c2cc773887ac45934075ea5/feilregistreringer.txt?disposition=inline'
+    url_work = 'https://julekalender-backend.knowit.no/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdVVDIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7c54e83e4bf7d625841928ae1b26b9adb4cfd0fa/skritt.txt?disposition=inline'
 
     wrongs = {(x := position.split(' /'))[0]: [int(wrong) for wrong in x[1:]]
-              for position in requests.get(url_work).content.decode('utf-8').splitlines()}
+              for position in requests.get(url_wrong).content.decode('utf-8').splitlines()}
 
     workers = [[int(z) if z.strip().isdigit() else 0 if z.strip() == '' else z.strip() for z in elf.split('/')]
-               for elf in requests.get(url_steps).content.decode('utf-8').splitlines()]
+               for elf in requests.get(url_work).content.decode('utf-8').splitlines()]
 
     total_steps, days = defaultdict(lambda: [0]*7), 1
     for w in workers:
